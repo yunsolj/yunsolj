@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      margin: 0;
+      background: url('img/papaer2.jpg') center/cover no-repeat;
+      font-family: 'HSBomBaram2.0';
+      position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 80px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+
+    .logo {
+      width: 300px;
+      height: 166.06px;
+      margin-top: 10px;
+    }
+
+    .main-image {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .main-image a {
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+    }
+
+    .main-image img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .main-image .tooltiptext {
+      visibility: hidden;
+      width: 130px;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 50%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.5s;
+      font-family: '나눔스퀘어 네오';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .main-image a:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #3498db;
+      padding: 25px;
+      color: #fff;
+      text-align: right;
+      margin-right: 50px;
+      margin-top: 100px;
+      width: 100%;
+      opacity: 80%;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">
+    <img src="img/logo.png" alt="Logo" class="logo">
+  </a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="me.html">IT'S ME</a>
+    <a href="favorite.html">FAVORITE</a>
+    <a href="my work.html">MY WORK</a>
+    <a href="bff.html">B.F.F</a>
+    <a href="bk.html">HOBBIES & BUCKET LIST</a>
+  </nav>
+
+  <div class="main-image">
+    <a href="#">
+      <img src="img/br1.png" alt="Image 1">
+      <span class="tooltiptext">저의 키링이에요♥︎</span>
+    </a>
+    <a href="#">
+      <img src="img/br2.png" alt="Image 2">
+      <span class="tooltiptext">요술램프 지니🧞‍♂️</span>
+    </a>
+    <a href="#">
+      <img src="img/br3.png" alt="Image 3">
+      <span class="tooltiptext">맛집메이트 현주니</span>
+    </a>
+    <a href="#">
+      <img src="img/br4.png" alt="Image 4">
+      <span class="tooltiptext">아이디어뱅크 밍디</span>
+    </a>
+    <a href="#">
+      <img src="img/br5.png" alt="Image 5">
+      <span class="tooltiptext">다재다능 여누</span>
+    </a>
+    <a href="#">
+      <img src="img/br6.png" alt="Image 6">
+      <span class="tooltiptext">토숙이 어머님</span>
+    </a>
+  </div>
+
+  <footer>
+    <p>© IT'S ME YUNSOL</p>
+    <p>주소: 경기도 의왕시 계원대학로 66</p>
+    <p>이메일: yunsoljo09@kaywon.ac.kr</p>
+  </footer>
+</body>
+
+</html>

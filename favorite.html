@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      margin: 0;
+      background: url('img/papaer2.jpg') center/cover no-repeat;
+      font-family: 'HSBomBaram2.0';
+      position: relative;
+    }
+
+    .rotated-image {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+
+    .rotated-image .tooltip {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .rotated-image .tooltip img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      transform-origin: center center;
+    }
+
+    .rotated-image .tooltip:nth-child(1) img {
+      transform: rotate(-10deg);
+      margin-right: 30px;
+    }
+
+    .rotated-image .tooltip:nth-child(2) img {
+      transform: rotate(10deg);
+      margin-right: 30px;
+    }
+
+    .rotated-image .tooltip:nth-child(3) img {
+      transform: rotate(-15deg);
+      margin-right: 50px;
+    }
+
+    .rotated-image .tooltip:nth-child(4) img {
+      transform: rotate(15deg);
+      margin-right: 30px;
+    }
+
+    .rotated-image .tooltip .tooltiptext {
+      visibility: hidden;
+      opacity: 0;
+      width: 130px;
+      background-color: #3498db;
+      color: #fff;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 5%;
+      left: 50%;
+      margin-left: -60px;
+      transition: opacity 0.5s;
+      font-family: '나눔스퀘어 네오';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .rotated-image .tooltip:hover {
+      transform: rotate(10deg);
+    }
+
+    .rotated-image .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .logo {
+      width: 300px;
+      height: 166.06px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #3498db;
+      padding: 25px;
+      color: #fff;
+      text-align: right;
+      margin-right: 50px;
+      margin-top: 20px; 
+      width: 100%;
+      opacity: 80%;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 100px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">
+    <img src="img/logo.png" alt="Logo" class="logo">
+  </a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="me.html">IT'S ME</a>
+    <a href="favorite.html">FAVORITE</a>
+    <a href="my work.html">MY WORK</a>
+    <a href="bff.html">B.F.F</a>
+    <a href="bk.html">HOBBIES & BUCKET LIST</a>
+  </nav>
+
+  <div class="rotated-image">
+    <div class="tooltip">
+      <img src="img/Chiikawa.png" alt="회전된 이미지">
+      <span class="tooltiptext">가장 좋아하는<br>캐락터'치이카와'</span>
+    </div>
+    <div class="tooltip">
+      <img src="img/crepe.png" alt="회전된 이미지">
+      <span class="tooltiptext">가장 좋아하는<br>디저트'크레페'</span>
+    </div>
+    <div class="tooltip">
+      <img src="img/music.png" alt="회전된 이미지">
+      <span class="tooltiptext">좋아하는 노래<br>'BURNING FRIDAY NIGHT'</span>
+    </div>
+    <div class="tooltip">
+      <img src="img/spy.png" alt="회전된 이미지">
+      <span class="tooltiptext">재미있게 본 영화<br>'spy(2015)'</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>© IT'S ME YUNSOL</p>
+    <p>주소: 경기도 의왕시 계원대학로 66</p>
+    <p>이메일: yunsoljo09@kaywon.ac.kr</p>
+  </footer>
+</body>
+
+</html>

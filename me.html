@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      margin: 0;
+      background: url('img/papaer2.jpg') center/cover no-repeat;
+      font-family: 'HSBomBaram2.0';
+      position: relative;
+    }
+
+    .rotated-image {
+      display: flex;
+      margin-bottom: 100px;
+    }
+
+    .rotated-image img {
+      max-width: 100%;
+      margin-right: 1px;
+      margin-left: 50px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .rotate-1 {
+      transform: rotate(-5deg) scale(1);
+      width: 347px;
+      height: 445.24px;
+    }
+
+    .rotate-2 {
+      transform: rotate(3deg) scale(1);
+      width: 100%;
+    }
+
+    .rotated-image img:hover {
+      transform: scale(1.1);
+    }
+
+    .hover-color {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease-in-out;
+      font-size: 30px;
+      letter-spacing: -0.5px;
+      line-height: 2;
+    }
+
+    .logo {
+      width: 300px;
+      height: 166.06px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #3498db;
+      padding: 25px;
+      color: #fff;
+      text-align: right;
+      margin-right: 50px;
+      width: 100%;
+      opacity: 80%;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 80px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="index.html">
+    <img src="img/logo.png" alt="Logo" class="logo">
+  </a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="me.html">IT'S ME</a>
+    <a href="favorite.html">FAVORITE</a>
+    <a href="my work.html">MY WORK</a>
+    <a href="bff.html">B.F.F</a>
+    <a href="bk.html">HOBBIES & BUCKET LIST</a>
+  </nav>
+
+  <div class="rotated-image">
+    <img src="img/me.png" alt="회전된 이미지" class="rotate-1">
+    <img src="img/meme.png" alt="회전된 이미지" class="rotate-2">
+  </div>
+
+  <footer>
+    <p>© IT'S ME YUNSOL</p>
+    <p>주소: 경기도 의왕시 계원대학로 66</p>
+    <p>이메일: yunsoljo09@kaywon.ac.kr</p>
+  </footer>
+</body>
+
+</html>
